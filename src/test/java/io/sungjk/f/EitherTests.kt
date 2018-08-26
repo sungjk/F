@@ -6,7 +6,7 @@ import kotlin.test.assertEquals
 /**
  * Created by jeremy on 08/17/2018.
  */
-class FunctionalTests {
+class EitherTests {
 
     @Test
     fun testLeft() {
