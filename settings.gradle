@@ -8,3 +8,9 @@
  */
 
 rootProject.name = 'F'
+
+include 'java'
+include 'kotlin'
+include 'scala'
+
+rootProject.children.each {it.name="${rootProject.name}-${it.name}"}
