@@ -1,5 +1,3 @@
-package io.sungjk.f
-
 /**
  * Created by jeremy on 08/17/2018.
  */

@@ -1,5 +1,8 @@
-package io.sungjk.f
-
+import Either
+import Left
+import Right
+import flatMap
+import map
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
@@ -12,7 +15,7 @@ class EitherTests {
     fun testLeft() {
         val l: Either<Int, Int> = Left(42)
         val expected = when (l) {
-            is Left  -> l.value - 1
+            is Left -> l.value - 1
             is Right -> l.value + 1
         }
 
@@ -23,7 +26,7 @@ class EitherTests {
     fun testRight() {
         val r: Either<Int, Int> = Right(42)
         val expected = when (r) {
-            is Left  -> r.value - 1
+            is Left -> r.value - 1
             is Right -> r.value + 1
         }
 

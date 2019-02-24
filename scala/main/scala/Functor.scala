@@ -1,4 +1,3 @@
-package io.sungjk.f
 
 // Functors: uniform action over a parameterized type, generalizing the map function on lists.
 trait Functor[F[_]] {
