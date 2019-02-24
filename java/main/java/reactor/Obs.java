@@ -1,5 +1,6 @@
 package reactor;
 
+import java.util.Observable;
 import java.util.Observer;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -9,13 +10,11 @@ import java.util.concurrent.Executors;
  */
 public class Obs {
 
-    /*
-    1. Complete
-    2. Error(handling, recover, fallback, ...)
-     */
+    // 1. Complete
+    // 2. Error(handling, recover, fallback, ...)
 
     // Iterable(pull) <---> Observable(push)
-    static class IntObservable extends java.util.Observable implements Runnable {
+    static class IntObservable extends Observable implements Runnable {
 
         @Override
         public void run() {
