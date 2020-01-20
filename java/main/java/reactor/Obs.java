@@ -27,6 +27,29 @@ public class Obs {
     }
 
     public static void main(String[] args) {
+        /*
+        Iterable<Integer> iter = () ->
+            new Iterator<Integer>() {
+                int i = 0;
+                final static int MAX = 10;
+
+                @Override
+                public boolean hasNext() {
+                    return i < MAX;
+                }
+
+                @Override
+                public Integer next() {
+                    return ++i;
+                }
+            };
+
+        for (Integer i  : iter) {   // for-each
+            System.out.println(i);
+        }
+         */
+
+        // Observable > Event/Data -> Observer
         Observer ob = (o, arg) -> System.out.println(Thread.currentThread().getName() + " " + arg);
 
         IntObservable io = new IntObservable();
