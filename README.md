@@ -1,6 +1,5 @@
 # F
-💎Private common utils with functional programming.
-
+Private common utils with functional programming.
 - Pure functions
 - Function composition
 - Avoid shared state
